@@ -1,3 +1,4 @@
 test-environment/
 .env
 .idea/
+.DS_Store
