@@ -1,6 +1,8 @@
 $location = "..\test-environment"
 $relative_env_file_path = ".\.env"
 
+Set-Location $PSScriptRoot
+
 Write-Host "Creating Environment in '$location'"
 
 New-Item -Name $location -Force -ItemType "Directory" | Out-Null
