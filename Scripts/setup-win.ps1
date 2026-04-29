@@ -10,7 +10,7 @@ Set-Location -Path $location
 
 # Check modifiable stuff.
 if (-not(Test-Path -Path $relative_env_file_path)) {
-    "REMOTE_PASSWORD=..." | Out-File -FilePath $relative_env_file_path | Out-Null
+    "REMOTE_PASSWORD=" | Out-File -FilePath $relative_env_file_path | Out-Null
     Write-Host "Generated .env file. Please add your database password inside."
     Set-Location -Path ".."
     Exit

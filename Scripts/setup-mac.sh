@@ -12,7 +12,7 @@ cd "$location"
 
 # Check modifiable stuff.
 if [ ! -f "$relative_env_file_path" ]; then
-    echo "REMOTE_PASSWORD=..." > "$relative_env_file_path"
+    echo "REMOTE_PASSWORD=" > "$relative_env_file_path"
     echo "Generated .env file. Please add your database password inside."
     cd ".."
     exit
