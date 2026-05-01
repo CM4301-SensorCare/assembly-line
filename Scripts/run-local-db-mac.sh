@@ -2,7 +2,7 @@
 cd "$(dirname "$0")/../test-environment"
 
 # Check dependencies
-if ! command -v node &> /dev/null; then
+if ! command -v mysql.server &> /dev/null; then
     echo "MariaDB is not installed. Installing via brew:"
     brew install mariadb
 else
